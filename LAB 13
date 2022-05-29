@@ -1,0 +1,39 @@
+// Program to show multilievel inheritance.
+
+#include <iostream>
+using namespace std;
+
+class Animal
+{
+public:
+    Animal()
+    {
+        cout << "Animals make different sounds.\n";
+    }
+};
+
+class Horse: public Animal
+{
+public:
+    Horse()
+    {
+        cout << "This is a hourse.\n";
+    }
+};
+
+class Sound : public Horse
+{
+public:
+    Sound()
+    {
+        cout << "HORSE Nicker.\n";
+    }
+};
+
+int main()
+{
+
+    Sound obj;
+
+    return 0;
+}
